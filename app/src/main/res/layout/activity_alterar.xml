@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alterar Dados"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtVazioAlterar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nenhuma ferramenta cadastrada."
+        android:textColor="#888888"
+        android:gravity="center"
+        android:padding="16dp"
+        android:visibility="gone"/>
+
+    <ListView
+        android:id="@+id/listViewAlterar"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:divider="@null"
+        android:padding="8dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/txtSelecionado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selecione uma ferramenta acima"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView style="@style/RotuloCampo" android:text="Nome da ferramenta"/>
+            <EditText
+                android:id="@+id/edtNomeAlterar"
+                style="@style/CampoTexto"/>
+
+            <TextView style="@style/RotuloCampo" android:text="Quantidade"/>
+            <EditText
+                android:id="@+id/edtQuantidadeAlterar"
+                style="@style/CampoTexto"
+                android:inputType="number"/>
+
+            <TextView style="@style/RotuloCampo" android:text="Localização"/>
+            <EditText
+                android:id="@+id/edtLocalAlterar"
+                style="@style/CampoTexto"/>
+
+            <Button
+                android:id="@+id/btnSalvarAlterar"
+                style="@style/BotaoMenu"
+                android:layout_marginTop="24dp"
+                android:text="Salvar Alterações"
+                android:background="@drawable/button_accent_background"
+                android:textColor="#FFFFFF"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
