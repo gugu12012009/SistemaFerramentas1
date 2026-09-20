@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -74,21 +75,25 @@
         <Button
             android:id="@+id/btnCadastrar"
             style="@style/BotaoMenu"
+            app:backgroundTint="@null"
             android:text="Cadastrar Ferramenta"/>
 
         <Button
             android:id="@+id/btnAlterar"
             style="@style/BotaoMenu"
+            app:backgroundTint="@null"
             android:text="Alterar Dados"/>
 
         <Button
             android:id="@+id/btnConsultar"
             style="@style/BotaoMenu"
+            app:backgroundTint="@null"
             android:text="Consultar Ferramenta"/>
 
         <Button
             android:id="@+id/btnExcluir"
             style="@style/BotaoMenu"
+            app:backgroundTint="@null"
             android:text="Excluir Ferramenta"/>
 
     </LinearLayout>
